@@ -23,7 +23,7 @@ public class Game {
     @Column(columnDefinition = "TEXT")
     private String shortDescription;
     @Column(columnDefinition = "TEXT")
-    private String LongDescription;
+    private String longDescription;
 
     public Game () {}
 
@@ -37,7 +37,7 @@ public class Game {
         this.score = score;
         this.imgUrl = imgUrl;
         this.shortDescription = shortDescription;
-        LongDescription = longDescription;
+        this.longDescription = longDescription;
     }
 
     public Long getId() {
@@ -97,11 +97,11 @@ public class Game {
     }
 
     public String getLongDescription() {
-        return LongDescription;
+        return longDescription;
     }
 
     public void setLongDescription(String longDescription) {
-        LongDescription = longDescription;
+        this.longDescription = longDescription;
     }
 
     public Double getScore() {
