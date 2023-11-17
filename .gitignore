@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+javascript-testes.js
+### Postgree data
+.data/
